@@ -1,0 +1,15 @@
+{
+    "name": {
+      "name_cn": "测试角色",
+      "name_jp": "测试角色_jp",
+      "name_jp_2": "测试角色_jp_roma",
+      "name_en": "Code_004527"
+    },
+    "information": "<p>just for a simple test</p><p>just for a simple test</p><p>just for a simple test</p><p>just for a simple test</p>",
+    "tags": [
+      "[+]uknown",
+      "[+]null",
+      "[+]undefined",
+      "[-]NaN"
+    ]
+  }

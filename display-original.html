@@ -1,0 +1,480 @@
+<!-- 这个文件是用来设计你喜欢的角色的展示页面的 在我提示的地方填入相关数据再运行html查看效果 -->
+<!-- 只需要修改文字部分 不需要修改代码 -->
+<!-- 后续如果有精力会加入自识别你写入的部分并转换为我的文件里用的json格式文件树 -->
+<!-- this file is used to design the display page of your favorite character, you need to fill in the relevant data in the specified place and run the html to see the effect. -->
+<!-- you only need to modify the text part, and do not need to modify the code. -->
+<!-- if I have time, I will add the ability to recognize the content you wrote and convert it to a json format file tree for the main files. -->
+<!-- 部分机翻 有误指正 -->
+<!-- partially machine translated,please correct errors -->
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Original</title>
+</head>
+<body>
+    <div id="bg">
+        <div id="bg_2">
+            <div id="window">
+                <span id="cover" class="coverSet">
+                </span>
+                <span id="messageBorad">              
+                    <span id="dangan">档案</span>             
+                    <span id="information">
+                        <!-- for change -->
+                        <p>轻小说《青春猪头少年系列》及衍生作品中的角色,由种崎敦美配音.</p>
+                        <p>双叶理央，17岁，10月23日出生，身高155厘米，灰色长卷发，身着白大褂，体型较小，戴着眼镜，披在制服外面的白袍特别显眼，挺直背脊的身影挺帅气的。身材很好，在初中时因为被同班男生讨论而十分厌恶自己的身体，对此很自卑。是个冷静沉着的理科女，神奈川县立峰原高中二年级生，参加社员只有一名的科学社，性格孤僻自卑。在学校里被当作怪人。</p>
+                        <!-- 写入部分 -->
+                    </span>
+                    
+                    <span id="nameSystem">
+                        <span id="name_cn" class="hidden1">双叶理央</span><!-- 每个元素值为写入部分 -->
+                        <span id="name_jp" class="hidden">双葉理央</span><!-- input the content in element value -->
+                        <span id="name_jp_2" class="hidden">ふたば りお</span><!--  -->
+                        <span id="name_en" class="hidden1">Futaba Rio</span><!--  -->
+                    </span>
+                    
+                    <span id="tags">
+                        <!--every span's value is for change -->
+                        <span>[+]INTP</span>
+                        <span>[+]实验服</span>
+                        <span>[+]理科女</span>
+                        <span>[-]巨乳</span>
+                        <!--每个span的值为写入部分 -->
+                        
+                        <!-- [+][-]无实义 只是作者来区分这个橘色让自己喜欢/讨厌的点(当然是个人观点) -->
+                        <!-- [+][-]have no meaning, just for distinguishing the point i like or dislike of the character (of course, it's just a personal opinion)  -->
+                    </span>
+                    
+                </span>
+                <span id="cancleButton">
+                    
+                </span>
+            </div>
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/YamadaRyō-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/InabaHimeko-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/Ichigo-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/IchigyouRuri-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    :root{
+        font-family:Arial, Helvetica, sans-serif;
+        --imgwidth: 250px;
+        --imgPadding: 10px;
+        --speedTime1: 9s;
+        --speedTime2: 4s;
+        --speedTime3: 8.2s;
+        --speedTime4: 8.5s;
+        --speedTime5: 7s;
+        --speedTime6: 11s;
+
+
+
+    }
+    #bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #f5f5f5;
+        z-index: -1;
+        overflow: hidden;
+        background-image: url(./img/bg.jpg);
+    }
+    #bg_2{
+        position: absolute;
+        width: max-content;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        display: flex;
+        overflow: hidden;
+    }
+    .row{
+        width: calc(var(--imgwidth) + var(--imgPadding) * 2);
+        height: 100%;
+        overflow-y: hidden;
+    }
+    .row .row_item{
+        width: 100%;
+        height: max-content;
+        overflow: hidden;
+        animation: move var(--speedTime1) linear infinite;
+    }
+    .row:nth-of-type(1) .row_item{
+
+        animation: move var(--speedTime1) linear infinite;
+    }
+    .row:nth-of-type(2) .row_item{
+        animation: move var(--speedTime2) linear infinite;
+    }
+    .row:nth-of-type(3) .row_item{
+        animation: move var(--speedTime3) linear infinite;
+    }
+    .row:nth-of-type(4) .row_item{
+        animation: move var(--speedTime4) linear infinite;
+    }
+    .row:nth-of-type(5) .row_item{
+        animation: move var(--speedTime5) linear infinite;
+    }
+    .row:nth-of-type(6) .row_item{
+        animation: move var(--speedTime6) linear infinite;
+    }
+    .row .row_item .img{
+        display: block;
+        width: var(--imgwidth);
+        height:var(--imgwidth); 
+        padding: var(--imgPadding);
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    .row .row_item .img img{
+        width: var(--imgwidth);
+        height:var(--imgwidth);
+        background-image: url(./img/cover/FutabaRio-1.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        border-radius: 20px 20px 20px 20px;
+        z-index: 999;
+        transition: all 0.2s ease-in-out;
+    }
+    .row .row_item .img :hover{
+        border-radius:20px 100px 20px 100px;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        display: fixed;
+        z-index: 9999;
+    }
+    @keyframes move{
+        form{
+            transform: translate(0,100%);
+        }
+        to{
+            transform: translate(0,-100%);
+        }
+    }
+    #window{
+        width: 800px;
+        min-height: 600px;
+        height: max-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9998;
+        background-color: #b1b1b16d;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: #f5f5f5 solid 1px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    #window #cover{
+        display: block;
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        /*======在这设置你的图片地址====== */
+        background-image: url(./img/cover/FutabaRio-1.webp);
+        /*======setting your image url here====== */
+    /* 如果想要功能正常实现 请把第一张图的名字命名成 "名字A-1.webp" 
+    第二张图为"名字A-2.webp" 大图立绘为"名字A-portrait.webp"
+    图片放在img文件夹下 
+    在css中只需要写入-1即可 为了能直接展示出来*/
+    /* if you would like it function properly, please rename the first displayed cover picture as "nameA-1.webp" 
+    and the second cover picture as "nameA-2.webp" and the larger portrait as "nameA-portrait.webp"
+    all pictures should be placed in the img folder 
+    only "-1" should be written in css for direct display */
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        filter: drop-shadow(1px 1px 15px #ffffff);
+        z-index: 9999;
+        filter: blur(0);
+
+    }    
+    #window #cover-portrait{
+        display: block;
+        position: absolute;
+        width: 400px;
+        height: 800px;
+        top: -95px;
+        left: -120px;
+        overflow: hidden;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        filter: drop-shadow(-20px -20px 10px #ffffff);
+    }
+
+    #window #cancleButton{
+        display: block;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        margin: -50px;
+        top: 0;
+        right: 0;
+        background-image: url(./img/坍缩.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: unset;
+    }
+    #window #dangan{
+        position: absolute;
+        top: -80px;
+        right: 2em;
+        font-size: 70px;
+        display: block;
+        filter: drop-shadow(2px 2px 4px #ffffff);
+    }
+    #window #messageBorad{
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 65%;
+        margin: 20px;
+    }
+    #window #messageBorad #information{
+        font-size: 25px;
+        text-indent: 2em;
+    }
+    #window #messageBorad #nameSystem{
+        display: block;
+        position: absolute;
+        left: -240px;
+        bottom: 0;
+        font-size: 20px;
+        height: 80px;
+        width: max-content;
+        font-weight: 800;
+    }
+    #window #messageBorad #nameSystem #name_cn,
+    #window #messageBorad #nameSystem #name_jp{
+        color: #ffffff;
+        position: relative;
+        left: -10px;
+        bottom: 20px;
+        font-size: 50px;
+    }
+    #window #messageBorad #nameSystem #name_jp_2,
+    #window #messageBorad #nameSystem #name_en{
+        color: black;
+        filter: drop-shadow(2px 2px 4px #ffffff);
+        font-size: 40px;
+        display: block;
+        width: max-content;
+        position: absolute;
+        bottom: 0;
+        left: 22px;
+        filter: drop-shadow(3px 3px 2px #ffffff);
+        filter: opacity(0.8);
+        text-shadow: #f5f5f5 1px 1px 5px;
+        text-shadow: #f5f5f5 -1px -1px 5px;
+    }
+    #window #messageBorad #nameSystem #name_jp_2,
+    #window #messageBorad #nameSystem #name_en::before{
+        content: attr(data-name);
+        position: absolute;
+        bottom: 10px;
+        left: -20px;
+        width: 45px;
+        height: 5px;
+        background-color: #0a7855; 
+        filter: blur(2px);
+        filter: drop-shadow(0px 0px 6px #00a987);       
+    }
+    #window #messageBorad #nameSystem #name_jp_2,
+    #window #messageBorad #nameSystem #name_en::after{
+        content: attr(data-name);
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 40px;
+        height: 5px;
+        background-color: #0a7855; 
+        filter: blur(2px);
+        filter: drop-shadow(0px 0px 6px #00a987);       
+    }
+    #window #messageBorad #tags{
+        position: absolute;
+        left: 2px;
+        height: 2em;
+        display: grid;
+        left: -16em;
+        grid-template-columns: 20em 20em;
+        grid-column: 10em 10em;
+    }
+    #window #messageBorad #tags span{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        width: max-content;
+        height: 50px;
+        padding: 15px;
+        margin-top: 20px
+    }
+    .hidden{
+        display: none;
+        position: absolute;
+        top: -999em;
+    }
+</style>
+<script>
+    const aRows = document.querySelectorAll('.row');
+    aRows.forEach(Row => {
+        var row_item = Row.firstElementChild
+        var new_row_item = row_item.cloneNode(true);
+        Row.appendChild(new_row_item);
+        });
+    document.getElementById("cover").addEventListener("click", changeWindowImg);
+    function changeWindowImg(){
+        // var imgSRC = document.getElementById("cover").style.backgroundImage;
+        //
+        //在设计版里这里出现了问题 需要部分更改
+        var eCover = document.getElementById("cover");
+        var imgSRC = window.getComputedStyle(eCover).backgroundImage;
+        //in designer version, this line has a problem need to be modified
+        //
+        var status = imgSRC.slice(-8, -7);
+        if (status == 1) {
+            var imgSRC = imgSRC.replace('-1', '-2');
+        }else{
+            var imgSRC = imgSRC.replace('-2', '-1');
+        };
+        document.getElementById("cover").style.backgroundImage = imgSRC;
+    }
+    document.getElementById("cover").addEventListener("dblclick", changeWindowImgPlus);
+    function changeWindowImgPlus(){
+        var cover = document.getElementsByClassName("coverSet")[0];
+        // var imgSRC = cover.style.backgroundImage;
+        //
+        //for same reason as above
+        var imgSRC = window.getComputedStyle(cover).backgroundImage;
+        //一样的问题
+        //
+        if(cover.id != "cover-portrait"){
+            var imgSRCcut = imgSRC.slice(0, -8);
+            imgSRC = imgSRCcut + "portrait.webp";
+            cover.style.backgroundImage = imgSRC;
+            cover.id = "cover-portrait";
+        }else{
+            cover.id = "cover";
+            var imgSRCcut = imgSRC.slice(0, -15);
+            imgSRC = imgSRCcut + "1.webp";
+            cover.style.backgroundImage = imgSRC;
+        }
+    }
+</script>
+</html>

@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my wing</title>
+</head>
+<body>
+    <div id="bg">
+        <div id="bg_2">
+            <div id="window">
+                <span id="cover" class="coverSet">
+                    <img src="" alt="">
+                </span>
+                <span id="messageBorad">
+                    
+                    <span id="dangan">档案</span>
+                    
+                    <span id="information">
+                      <!--  -->
+                    </span>
+                    
+                    <span id="nameSystem">
+                        <span id="name_cn" class="unhidden"><!--  --></span>
+                        <span id="name_jp" class="hidden"><!--  --></span>
+                        <span id="name_jp_2" class="hidden"><!--  --></span>
+                        <span id="name_en" class="unhidden"><!--  --></span>
+                    </span>
+                    
+                    <span id="tags">
+                        <!--  -->
+                    </span>
+                    
+                </span>
+                <span id="cancleButton">
+                    
+                </span>
+            </div>
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/YamadaRyō-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/InabaHimeko-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/Ichigo-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/IchigyouRuri-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="row_item">
+                    <span class="img">
+                        <img src="./img/cover/KimishimaAyano-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/MiyamaeNonoa-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/SuouYuki-1.webp" alt="图片加载失败">
+                    </span>
+                    <span class="img">
+                        <img src="./img/cover/FutabaRio-1.webp" alt="图片加载失败">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<style>
+    :root{
+        font-family:Arial, Helvetica, sans-serif;
+        --imgwidth: 250px;
+        --imgPadding: 10px;
+        --speedTime1: 9s;
+        --speedTime2: 4s;
+        --speedTime3: 8.2s;
+        --speedTime4: 8.5s;
+        --speedTime5: 7s;
+        --speedTime6: 11s;
+    }
+    #bg{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        background-color: #f5f5f5;
+        z-index: -1;
+        overflow: hidden;
+        background-image: url(./img/bg.jpg);
+
+    }
+    #bg_2{
+        position: absolute;
+        width: max-content;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        margin: auto;
+        /* background-color: #fee0e0; */
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+        display: flex;
+
+        overflow: hidden;
+
+    }
+    .row{
+        width: calc(var(--imgwidth) + var(--imgPadding) * 2);
+        height: 100%;
+        /* background-color: #b5ff9c; */
+        /* overflow-y: scroll; */
+        /* //调试用 */
+        overflow-y: hidden;
+    }
+    .row .row_item{
+        width: 100%;
+        height: max-content;
+        /* background-color: firebrick; */
+        overflow: hidden;
+        animation: move var(--speedTime1) linear infinite;
+    }
+    .row:nth-of-type(1) .row_item{
+
+        animation: move var(--speedTime1) linear infinite;
+    }
+    .row:nth-of-type(2) .row_item{
+        animation: move var(--speedTime2) linear infinite;
+    }
+    .row:nth-of-type(3) .row_item{
+        animation: move var(--speedTime3) linear infinite;
+    }
+    .row:nth-of-type(4) .row_item{
+        animation: move var(--speedTime4) linear infinite;
+    }
+    .row:nth-of-type(5) .row_item{
+        animation: move var(--speedTime5) linear infinite;
+    }
+    .row:nth-of-type(6) .row_item{
+        animation: move var(--speedTime6) linear infinite;
+    }
+
+    .row .row_item .img{
+        display: block;
+        width: var(--imgwidth);
+        height:var(--imgwidth); 
+        padding: var(--imgPadding);
+        /* background-color: aqua; */
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    
+    .row .row_item .img img{
+        width: var(--imgwidth);
+        height:var(--imgwidth);
+        /* padding: var(--imgPadding); */
+        /* background-color: aqua; */
+        background-image: url(./img/cover/FutabaRio-1.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        /* border-radius: 120px 50px 120px 110px; */
+        border-radius: 20px 20px 20px 20px;
+        z-index: 999;
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    .row .row_item .img :hover{
+        border-radius:20px 100px 20px 100px;
+        transform: scale(1.1);
+        transition: all 0.3s ease-in-out;
+        display: fixed;
+        z-index: 9999;
+    }
+    @keyframes move{
+        form{
+            transform: translate(0,100%);
+        }
+        to{
+            transform: translate(0,-100%);
+        }
+    }
+
+    #window{
+        width: 800px;
+        min-height: 600px;
+        height: max-content;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 9998;
+        background-color: #b1b1b16d;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: #f5f5f5 solid 1px;
+        padding: 20px;
+        border-radius: 10px;
+        /* box-shadow: 0 0 10px #999; */
+        /* display: none; */
+    }
+    #window #cover{
+        display: block;
+        /* background-color: aqua; */
+        width: 200px;
+        height: 200px;
+        position: relative;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        /* background-image: url(./img/cover/FutabaRio-1.webp); */
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: cover;
+        filter: drop-shadow(1px 1px 15px #ffffff);
+        z-index: 9999;
+
+        filter: blur(0);
+
+    }    
+    #window #cover-portrait{
+        display: block;
+        position: absolute;
+        width: 400px;
+        height: 800px;
+        top: -95px;
+        left: -120px;
+        overflow: hidden;
+        /* background-color: aqua; */
+        /* background-image: url(./img/cover/FutabaRio-portrait.webp); */
+        background-repeat: no-repeat;
+        /* background-position: top left; */
+        background-size: 100%;
+        filter: drop-shadow(-20px -20px 10px #ffffff);
+
+    }
+    /*  */
+    #window #cover img{
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        /* border: #f5f5f5 solid 1px; */
+        filter: drop-shadow(-20px -20px 10px #ffffff);}
+        /*  */
+    
+    #window #cancleButton{
+        display: block;
+        position: absolute;
+        width: 120px;
+        height: 120px;
+        border-radius: 100%;
+        margin: -50px;
+        top: 0;
+        right: 0;
+        /* background-color: red; */
+        background-image: url(./img/坍缩.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        overflow: unset;
+    }
+    #window #dangan{
+        position: absolute;
+        top: -80px;
+        right: 2em;
+        font-size: 70px;
+        /* border: #f5f5f5 solid 1px ; */
+        /* border-radius: 20px 20px 0 0; */
+        display: block;
+        /* background-color: rgb(154, 155, 142); */
+        /* backdrop-filter: blur(10%); */
+        /* -webkit-backdrop-filter: blur(10%); */
+        filter: drop-shadow(2px 2px 4px #ffffff);
+    }
+    #window #messageBorad{
+        position: absolute;
+        top: 5px;
+        right: 0;
+        width: 65%;
+        margin: 20px;
+    }
+    #window #messageBorad #information{
+        font-size: 25px;
+        text-indent: 2em;
+        min-height: 355px;
+        display: block;
+    }
+    #window #messageBorad #nameSystem{
+        display: block;
+        position: absolute;
+        left: -240px;
+        bottom: 0;
+        font-size: 20px;
+        height: 80px;
+        width: max-content;
+        font-weight: 800;
+    }
+    #window #messageBorad #nameSystem #name_cn,
+    #window #messageBorad #nameSystem #name_jp{
+        color: #ffffff;
+        position: relative;
+        left: -10px;
+        bottom: 20px;
+        font-size: 50px;
+        
+    }
+    #window #messageBorad #nameSystem #name_jp_2,
+    #window #messageBorad #nameSystem #name_en{
+        color: black;
+        filter: drop-shadow(2px 2px 4px #ffffff);
+        font-size: 40px;
+        display: block;
+        width: max-content;
+        position: absolute;
+        bottom: 0;
+        left: 22px;
+        filter: drop-shadow(3px 3px 2px #ffffff);
+        filter: opacity(0.8);
+        text-shadow: #f5f5f5 1px 1px 5px;
+        text-shadow: #f5f5f5 -1px -1px 5px;
+    }
+    #window #messageBorad #nameSystem #name_jp_2,
+    #window #messageBorad #nameSystem #name_en::before{
+        content: attr(data-name);
+        position: absolute;
+        bottom: 10px;
+        left: -20px;
+        width: 45px;
+        height: 5px;
+        background-color: #0a7855; 
+        filter: blur(2px);
+        filter: drop-shadow(0px 0px 6px #00a987);       
+    }
+    #window #messageBorad #nameSystem #name_jp_2,
+    #window #messageBorad #nameSystem #name_en::after{
+        content: attr(data-name);
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 40px;
+        height: 5px;
+        background-color: #0a7855; 
+        filter: blur(2px);
+        filter: drop-shadow(0px 0px 6px #00a987);       
+    }
+    #window #messageBorad #tags{
+        position: absolute;
+        left: 2px;
+        height: 2em;
+        display: grid;
+        left: -16em;
+        grid-template-columns: 20em 20em;
+        grid-column: 10em 10em;
+    }
+    #window #messageBorad #tags span{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 50px;
+        font-weight: 800;
+        /* display: block; */
+        width: max-content;
+        height: 50px;
+        padding: 15px;
+        margin-top: 20px
+    }
+
+    .hidden{
+        display: none;
+        position: absolute;
+        top: -999em;
+    }
+</style>
+<script>
+//调试用
+    // function cloneImg(){
+    //     var img = document.createElement("img");
+    //     img.src = "https://via.placeholder.com/300x300";
+    //     img.alt = "图片加载失败";
+    //     var span = document.createElement("span");
+    //     span.classList.add("img");
+    //     span.appendChild(img);
+    //     document.getElementsByClassName("row_item")[0].appendChild(span);
+    // }    
+
+    const aRows = document.querySelectorAll('.row');
+    //console.log(aRows);
+    aRows.forEach(Row => {
+        // console.log(Row);
+        var row_item = Row.firstElementChild
+        // console.log(row_item.style);
+        // 在row里复制增加一个row_item
+        // console.log(row_item);
+        var new_row_item = row_item.cloneNode(true);
+        Row.appendChild(new_row_item);
+        // cloneRow(this);
+        });
+    
+    // function cloneRow(selectRow){
+    // console.log(selectRow) ;
+    // var row_item = selectRow.firstElementChild
+    // // 在row里复制增加一个row_item
+    // console.log(row_item);
+    // var new_row_item = row_item[0].cloneNode(true);
+    // selectRow[0].appendChild(new_row_item);
+    // }
+    // cloneRow()
+    // //调试
+    // document.getElementById("bg_2").addEventListener("click", function(){
+    //     cloneRow();
+    // });
+
+    
+    const eImgs = document.querySelectorAll('.img');
+    eImgs.forEach(eImgs => {
+        eImgs.addEventListener('mouseover', function() {
+            // autoSelectElement(this); // 调用自动选择函数 //调试
+            changeImg(this); // 调用切换图片函数
+        });
+        eImgs.addEventListener('mouseout', function() {
+            // autoSelectElement(this); // 调用自动选择函数 //调试
+            recoveImg(this); // 调用切换图片函数
+        });
+
+        eImgs.addEventListener('click', function() {
+            // autoSelectElement(this); // 调用自动选择函数 //调试
+            openWindow(this); // 打开窗口函数
+            var imgSRC = this.firstElementChild.src;
+            // var imgSRC2 = imgSRC.slice(0, -7);
+            var imgSRC2 = imgSRC.substring(imgSRC.lastIndexOf("/") + 1, imgSRC.lastIndexOf("-"));
+            // console.log(imgSRC);
+            // console.log(imgSRC2);
+            readJSON('' +imgSRC2+''); // 读取json文件函数
+            readJSON("'" +imgSRC2+"'"); //无效
+            // readJSON("FutabaRio")    //有效结果
+            //!这是可能存在错误的调试   因为没办大直接给字符串加上引号 所以用这种办法临时处理
+        });
+    });
+    
+    function autoSelectElement(eImgs) {
+        console.log("你悬停的元素是: ", eImgs);
+        console.log("你悬停的元素src是: ", eImgs.firstElementChild.src);
+    }
+
+    function changeImg(eImgs) {
+        var originSRC = eImgs.firstElementChild.src;
+        eImgs.firstElementChild.src = originSRC.replace('1.webp', '2.webp');
+    }
+    function recoveImg(eImgs) {
+        var originSRC = eImgs.firstElementChild.src;
+        eImgs.firstElementChild.src = originSRC.replace('2.webp', '1.webp');
+    }
+    function openWindow(eImgs) {
+        var imgSRC = eImgs.firstElementChild.src;
+        // var suffixWEBP = (imgSRC.slice(-5));//提取.webp
+        // var imgName = imgSRC.slice(0, -5);//文件名-2
+        // console.log(imgName);
+        // console.log(suffixWEBP);
+        var imgSRC2 = imgSRC.replace('-2', '-1');
+        var cover = document.getElementById("cover");
+        cover.style.backgroundImage = `url(${imgSRC2})`;
+        var window = document.getElementById("window");
+        window.style.display = "block";
+    }
+
+
+    document.getElementById("cover").addEventListener("click", changeWindowImg);
+    function changeWindowImg(){
+        var imgSRC = document.getElementById("cover").style.backgroundImage;
+        var status = imgSRC.slice(-8, -7);
+        //console.log(status);
+        if (status == 1) {
+            var imgSRC = imgSRC.replace('-1', '-2');
+            //console.log(imgSRC);
+        }else{
+            var imgSRC = imgSRC.replace('-2', '-1');
+            //console.log(imgSRC);
+        };
+        document.getElementById("cover").style.backgroundImage = imgSRC;
+    }
+
+    document.getElementById("cover").addEventListener("dblclick", changeWindowImgPlus);
+    function changeWindowImgPlus(){
+        //console.log("你双击了封面");
+        var cover = document.getElementsByClassName("coverSet")[0];
+        var imgSRC = cover.style.backgroundImage;
+        if(cover.id != "cover-portrait"){
+            var imgSRCcut = imgSRC.slice(0, -8);
+            imgSRC = imgSRCcut + "portrait.webp";
+            //console.log(imgSRC)
+            cover.style.backgroundImage = imgSRC;
+            cover.id = "cover-portrait";
+        }else{
+            cover.id = "cover";
+            //console.log(cover.id);
+            var imgSRCcut = imgSRC.slice(0, -15);
+            imgSRC = imgSRCcut + "1.webp";
+            //console.log(imgSRC)
+            cover.style.backgroundImage = imgSRC;
+        }
+    }
+
+
+    document.getElementById("cancleButton").addEventListener("click", closeWindow);
+    function closeWindow() {
+        document.getElementsByClassName("coverSet")[0].id = "cover";
+        var window = document.getElementById("window");
+        window.style.display = "none";
+    }
+    closeWindow();
+
+    //json数据读写
+    //外部读写json文件
+    function readJSON(fileName)  {
+        fetch('./json/' + fileName + '.json')
+        .then(response => {
+            // //响应状态
+            // if (!response.ok) {
+            //     throw new Error('响应错误');
+            // }
+            //解析json数据
+        return response.json();
+    }) 
+    .then(jsonData => {
+        //访问数据并写入
+        document.getElementById('name_cn').innerHTML = jsonData.name.name_cn;
+        document.getElementById('name_jp').innerHTML = jsonData.name.name_jp;
+        document.getElementById('name_jp_2').innerHTML = jsonData.name.name_jp_2;
+        document.getElementById('name_en').innerHTML = jsonData.name.name_en;
+        document.getElementById('information').innerHTML = jsonData.information;
+        document.getElementById('tags').innerHTML = `                       
+                    <span>${jsonData.tags[0]}</span>
+                    <span>${jsonData.tags[1]}</span>
+                    <span>${jsonData.tags[2]}</span>
+                    <span>${jsonData.tags[3]}</span>`
+        console.log(jsonData);
+        console.log("读取json文件成功");
+        ;
+    })
+    // .catch(error => {
+    //             console.error('发生错误:', error);
+    //         });
+    }
+</script>
+</html>
