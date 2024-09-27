@@ -1,4 +1,4 @@
->!:我希望我能把这个项目做完 在学校和家里的压力下
+ >!:我希望我能把这个项目做完 在学校和家里的压力下
 # = =项目背景= =
 项目为一个展示自己喜欢的动漫角色的流动照片墙,对每一个角色也可以打开窗口查看详细信息
 此项目目前**仅用html css js**完成 主要是为了练习前端开发能力和兴趣指导
@@ -31,6 +31,7 @@
  >FutabaRio.json
 
 - 以下是json文件的格式  也可以直接去json文件夹中的文件查看/更改
+在jsonMaker-original.html中可以更方便的的直接书写此项目的josn文件
 ```javascript
        {
             "name": {
@@ -70,6 +71,20 @@
 但是此属性对于部分浏览器可能不支持 
 - 在窗口中大量元素以绝对定位的方式出现
 - 标签中的[+][-]仅为装饰 无实义 只是作者来区分这个角色让自己喜欢/不太喜欢的点(当然是个人观点)
+# = =计划= =
+1. [制作中]加入文件自动生成json的文件和填入后自动生成的文件
+(一个是空白的只需要你填就行 看不见效果也不用到编辑器中修改  一个是页面上 你去改元素值 看着差不多了直接生成)
+几个input输入角色相关信息
+最后输出直接是完整的json语句/文件
+2. 加入点开窗口后背景不可互动的效果 预计用一个div实现
+3. 加入名称切换
+4. 加入动画
+5. 背景图用json导入 不用直接在html中写路径 改用读取json
+6. 打开角色播放对应的音乐+台词
+    如果可能 设想一下加入动画切片 时间成本较高
+    用卡片翻转效果 展示在卡片背面
+7. 加入设置页面  调整部分可选择效果 用函数()在控制台执行打开设置页面
+    在设置页面藏一个我自己的个人档案  加入信号干扰的效果在图片上
 
 # = =相关语言= =
 ``HTML HTML5 CSS CSS3 JavaScript JSON``
@@ -100,6 +115,7 @@ The file name is filename.json, which should correspond to the img file.
  >FutabaRio.json
 
 - The following is the format of the json file. You can also check or modify the file in the json folder directly.
+In the jsonMaker-original.html, it is easier to write the json file for this project.
 ```javascript
        {
             "name": {
@@ -138,6 +154,22 @@ At the beginning, the *row* and *row-item* are copied to the next row to complet
 However, this attribute may not be supported by some browsers.
 - In the window, a large number of elements are displayed in absolute position.
 - The [+][-] in the tag are decorative and have no meaning. They are just used by the author to distinguish this character as one that I like or dislike (of course, it is a personal opinion).
+# = =Plan= =
+1. [In progress] Add file generation and automatic generation of json files and files to fill in.
+(One is a blank one that you need to fill in, not visible and not need to modify in the editor. The other is a page on which you modify the element value, and it looks almost the same as the generated one directly.)
+Several input boxes for character-related information.
+The final output is a complete json statement or file.
+2. Add the effect of the background window not being interactive when the window is opened.
+The effect is implemented by a div.
+3. Add name switching.
+4. Add animation.
+5. Use json to import background images, not directly write the path in the html file.
+6. Open the character and play the corresponding music + dialogue.
+If possible, imagine adding animation slices, which is time-consuming.
+Use card flipping effect to show the card behind the picture.
+7. Add a settings page to adjust some selectable effects. Use a function () in the console to open the settings page.
+In the settings page, hide a personal profile and add signal interference effects on the picture.
+
 # = =Related Languages= =
 ``HTML HTML5 CSS CSS3 JavaScript JSON``
 

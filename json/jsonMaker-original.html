@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ZH">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsonMaker-original</title>
+    <!-- //今天时间不够了 明天把input和textarea的提示词翻译功能加上 -->
+    <!-- //后续加上自动生成json文件而不是控制台输出 -->
+    <!-- //如果可以加入上传并读取json -->
+    <!-- //time is not enough today, I will add the translation function to the input and textarea prompts tomorrow -->
+    <!-- //I will add the automatic generation of json files instead of console output -->
+    <!-- //if I can add the upload and read of json -->
+</head>
+<body>
+    <div id="tips">
+
+    </div>
+    <label for="fileUp">
+        <!-- <input type="file" id="fileUp" onchange="readFile(event)"> -->
+    </label>
+    <label for="FileDown">
+        <input type="text" id="name_cn" placeholder="中文名" >
+        <input type="text" id="name_jp" placeholder="日文名">
+        <input type="text" id="name_jp_2" placeholder="平假名">
+        <input type="text" id="name_en" placeholder="英文名">
+        <!-- <input type="text" id="information" placeholder="<p>信息</p>..."> -->
+        <textarea id="information" rows="4" cols="30" placeholder="<p>信息</p>..."></textarea>
+        <input type="text" id="tags1" placeholder="[ ]标签" value="[]">
+        <input type="text" id="tags2" placeholder="[ ]标签" value="[]">
+        <input type="text" id="tags3" placeholder="[ ]标签" value="[]">
+        <input type="text" id="tags4" placeholder="[ ]标签" value="[]">
+        <button onclick="upLoadData()" >finish</button>
+    </label>
+</body>
+<style>
+    :root{
+        --width: 400px ;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    }
+    body{
+        align-content: center;
+        justify-content: center;
+        display: flex;
+        height: 100vh;
+        overflow: hidden;
+    }
+    input{
+        height: 80px;
+        display: block;
+        font-size: 40px;
+        padding: 20px;
+    }
+    input,textarea{
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        border: 2px solid black;
+        width: var(--width);
+        padding: 0;
+        margin: 0;
+    }
+    button{
+        display: block;
+        font-size: 40px;
+        width: var(--width);
+        height: 90px;
+        border: 2px solid black;
+    }
+    #tips{
+        position: fixed;
+        left: 10%;
+        font-size: 20px;
+        width: 360px;
+        height: 800px;
+        background-color: rgb(255, 255, 255);
+        border: 2px solid black;
+        padding: 20px;
+        overflow: scroll;
+    }
+    .button,.button-2{
+        border-radius: 20px;
+        border: 2px solid black;
+        width: fit-content;
+    }
+    #name_cn,#name_en{
+        background-color: rgb(195, 255, 255);
+    }
+    #name_jp,#name_jp_2{
+        background-color: rgb(255, 204, 255);
+    }
+    #information{
+        background-color: rgb(255, 255, 195);
+        font-size: 35px;
+        max-height: fit-content;
+    }
+    #tags1,#tags2,#tags3,#tags4{
+        background-color: rgb(255, 165, 165);
+    }
+
+</style>
+<script>
+    var allInputs = document.querySelectorAll("input")
+    allInputs.forEach(input => {
+        input.setAttribute("autocomplete", "off");
+        input.setAttribute("type", " ");
+    });
+    document.getElementById("information").type = "textarea";
+
+    var tipBord = document.getElementById("tips")
+    function showTips(){
+        tipBord.innerHTML = `
+        <p>显示为中文+英文/日语+平假名</p>
+        <p>信息可以加入p标签分小节</p>
+        <p>书写information后请把所有换行删掉</p>
+        <p>ps:全文用标签换行 内容连在一起</p>
+        <p>标签前面的[]用来填入好感度+还是-</p>
+        <p>为了美观 尽量保持格式一样 也可以按照自己的标准来</p>
+        <span class="button">translation-翻译</span>
+        `
+    }
+    showTips()
+
+    document.getElementsByClassName("button")[0].addEventListener("click", function(){
+        tipBord.innerHTML = `
+        <p>displayed as Chinese+English/Japanese+Hiragana</p>
+        <p>information can be added in p tag in sections</p>
+        <p>please delete all line breaks in the information</p>
+        <p>ps: use tags to break lines and content together</p>
+        <p>the [] before the tag is used to fill in the level of liking + or -</p>
+        <p>to be beautiful, try to keep the format the same or follow your own standard</p>
+        <p style="color:lightgray">**reload to see the original text</p>
+        `
+    });
+
+
+    function readFile(event) {
+        var input = event.target;
+        var reader = new FileReader();
+        reader.onload = function(){
+//unfinished code
+
+        };
+    }
+
+    function upLoadData(){
+        var name_cn = document.getElementById("name_cn").value;
+        var name_jp = document.getElementById("name_jp").value;
+        var name_jp_2 = document.getElementById("name_jp_2").value; 
+        var name_en = document.getElementById("name_en").value;
+        var information = document.getElementById("information").value;
+        var tags1 = document.getElementById("tags1").value;
+        var tags2 = document.getElementById("tags2").value;
+        var tags3 = document.getElementById("tags3").value;
+        var tags4 = document.getElementById("tags4").value;
+        console.log(
+            `
+            {
+    "name": {
+      "name_cn": "${name_cn}",
+      "name_jp": "${name_jp}",
+      "name_jp_2": "${name_jp_2}",
+      "name_en": "${name_en}"
+    },
+    "information": "${information}",
+    "tags": [
+      "${tags1}",
+      "${tags2}",
+      "${tags3}",
+      "${tags4}"
+    ]
+  }
+            `
+        )
+    }
+</script>
+</html>
