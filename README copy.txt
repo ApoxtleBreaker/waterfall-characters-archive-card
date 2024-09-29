@@ -59,7 +59,6 @@
     如果需要更改照片墙上的图片 只要在html文件中把row-item中的img的src属性改成新的图片文件名即可
     **名称需要和前面说的img json一致**
     原则上名字可以随便取 只要统一 但是为了防止不必要的bug和提高可辨识性 建议把图片名改成你对应那个角色的英语名/日语罗马音等诸如此类的纯英字节
-    我默认用的是删去空格的英文名
 ### = =项目文件说明= =
 - 文件中的index为主要文件（包含开发过程中的注释和调试痕迹）
 - 如果你需要写入你的角色 为了方便你观察效果和制作 我准备了一个display-orginal.html文件
@@ -79,7 +78,7 @@
 - 在窗口中大量元素以绝对定位的方式出现
 - 标签中的[+][-]仅为装饰 无实义 只是作者来区分这个角色让自己喜欢/不太喜欢的点(当然是个人观点)
 # = =计划= =
-1. [制作中90%]加入文件自动生成json的文件和填入后自动生成的文件
+1. [制作中]加入文件自动生成json的文件和填入后自动生成的文件
 (一个是空白的只需要你填就行 看不见效果也不用到编辑器中修改  一个是页面上 你去改元素值 看着差不多了直接生成)
 几个input输入角色相关信息
 最后输出直接是完整的json语句/文件
@@ -144,7 +143,6 @@ In the jsonMaker-original.html, it is easier to write the json file for this pro
 If you need to change the pictures on the wall, you can simply change the src attribute of the img in the row-item in the html file to the new picture file name.
 - **Name needs to be consistent with the img json name.**
 - The principle is that the name can be anything you like, as long as it is consistent. However, to prevent unnecessary bugs and improve discriminability, it is recommended to change the picture name to the English name of the corresponding character, or the Japanese romanization of the name. 
-I default to using the English name with no spaces.
 ### = =Project File Description= =
 - The index file is the main file (with comments and debugging traces in the development process).
 - If you need to write your own character, I prepared a display-orginal.html file for you to observe the effect and make the profile page.
@@ -163,7 +161,7 @@ However, this attribute may not be supported by some browsers.
 - In the window, a large number of elements are displayed in absolute position.
 - The [+][-] in the tag are decorative and have no meaning. They are just used by the author to distinguish this character as one that I like or dislike (of course, it is a personal opinion).
 # = =Plan= =
-1. [In progress90%] Add file generation and automatic generation of json files and files to fill in.
+1. [In progress] Add file generation and automatic generation of json files and files to fill in.
 (One is a blank one that you need to fill in, not visible and not need to modify in the editor. The other is a page on which you modify the element value, and it looks almost the same as the generated one directly.)
 Several input boxes for character-related information.
 The final output is a complete json statement or file.

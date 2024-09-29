@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="download">下载 JSON 文件</button>
+</body>
+<script>
+    //字典转json
+    jsonString = JSON.stringify({
+    name: {
+        name_cn: "{name_cn}",
+        name_jp: "{name_jp}",
+        name_jp_2: "{name_jp_2}",
+        name_en: "{name_en}"
+    },
+    information: "{information}",
+    tags: [
+        "{tags1}",
+        "{tags2}",
+        "{tags3}",
+        "{tags4}"
+    ]
+}, null, 2);
+    console.log(jsonString);
+    //json转字典
+    jsondata =`
+{
+    "name": {
+      "name_cn": "{name_cn}",
+      "name_jp": "{name_jp}",
+      "name_jp_2": "{name_jp_2}",
+      "name_en": "{name_en}"
+    },
+    "information": "{information}",
+    "tags": [
+      "{tags1}",
+      "{tags2}",
+      "{tags3}",
+      "{tags4}"
+    ]
+  }`
+    data = JSON.parse(jsondata);
+    console.log(data);
+    
+    //下载json文件
+    document.getElementById('download').addEventListener('click', function() {
+    // 要写入 JSON 文件的数据
+    const data = {
+        name: "张三",
+        age: 25,
+        city: "北京"
+    };
+    // 将数据转换为 JSON 字符串
+    const jsonString = JSON.stringify(data, null, 2);
+    // 创建一个 Blob 对象
+    const blob = new Blob([jsonString], { type: "application/json" });
+    // 创建一个下载链接
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'data.json'; // 下载的文件名
+    // 自动点击下载链接
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    // 释放对象 URL
+    URL.revokeObjectURL(url);
+});
+</script>
+</html>
