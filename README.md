@@ -79,7 +79,7 @@
 - 在窗口中大量元素以绝对定位的方式出现
 - 标签中的[+][-]仅为装饰 无实义 只是作者来区分这个角色让自己喜欢/不太喜欢的点(当然是个人观点)
 # = =计划= =
-1. [制作中90%]加入文件自动生成json的文件和填入后自动生成的文件
+1. [制作中100.0%]加入文件自动生成json的文件和填入后自动生成的文件
 (一个是空白的只需要你填就行 看不见效果也不用到编辑器中修改  一个是页面上 你去改元素值 看着差不多了直接生成)
 几个input输入角色相关信息
 最后输出直接是完整的json语句/文件
@@ -163,7 +163,7 @@ However, this attribute may not be supported by some browsers.
 - In the window, a large number of elements are displayed in absolute position.
 - The [+][-] in the tag are decorative and have no meaning. They are just used by the author to distinguish this character as one that I like or dislike (of course, it is a personal opinion).
 # = =Plan= =
-1. [In progress90%] Add file generation and automatic generation of json files and files to fill in.
+1. [In progress100.0%] Add file generation and automatic generation of json files and files to fill in.
 (One is a blank one that you need to fill in, not visible and not need to modify in the editor. The other is a page on which you modify the element value, and it looks almost the same as the generated one directly.)
 Several input boxes for character-related information.
 The final output is a complete json statement or file.
