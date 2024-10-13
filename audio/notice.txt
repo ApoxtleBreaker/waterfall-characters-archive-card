@@ -1,0 +1,2 @@
+如果没有兼容问题就直接用中文名了  在json文档里写入音乐名字来检索 而不是直接改音乐文件名为角色名
+if there is no compatibility issue, just use Chinese name directly. In the JSON document, write the music name to search instead of directly changing the music file name to the character name.
