@@ -22,6 +22,7 @@
    左键双击切换大图立绘
 
 ![img3](./img/宣传图/2024-09-29_00-31-38.webp "img3")<br>
+**[效果展示网站](https://apoxtlebreaker.github.io/waterfall-characters-archive-card/)。**
 
 # =开发者视角=
 #### = =  基础数据更改= =
